@@ -14,4 +14,7 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('projects', views.projects, name='projects'),
     path('contact', views.contact, name='contact'),
+    path('python', views.python, name='python'),
+    path('datascience', views.datascience, name='datascience'),
+    path('rf', views.rf, name='rf'),
 ]

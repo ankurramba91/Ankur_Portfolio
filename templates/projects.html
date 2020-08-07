@@ -1,103 +1,75 @@
-<!doctype html>
-<html lang="en">
+{% extends "base.html" %}
+{%load static%}
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+{% block title%}Projects{% endblock title %}
 
-    <title>Projects</title>
-</head>
+{% block projectsactive %}active{% endblock projectsactive %}
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">Developer Ankur</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+{% block body %}
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact Me</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
+<div class="container-fluid mt-0 px-0 ">
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
 
-        
-    </nav>
+            <div class="carousel-item active" data-interval="10000">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 <b class="text-center display-4 text-danger  "  style=" font-weight: bold; text-decoration: underline double ;text-decoration-color:rgb(241, 233, 110);">Django Framework</h1>
+                    <h1 class="text-left display-4 text-warning " style=" font-weight: bold; text-decoration: underline double; text-align: start; text-decoration-color: rgb(218, 96, 197);">HTML-5 </h1>
+                    <h1 class="text-right display-4 text-success" style="font-weight: bold; text-decoration: underline double; text-align: start; text-decoration-color:rebeccapurple;">BootStrap-v4</h1>
 
-    <div class="container my-3">
-        <h2 class="text-center my-3">My Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://source.unsplash.com/500x300/?nature,water" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Designer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Click for Demo</a>
-                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://source.unsplash.com/500x300/?nature,water" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Developer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Click for Demo</a>
-                    </div>
-                </div>
-            </div>
-            <div class=col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://source.unsplash.com/500x300/?nature,water" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Data Science</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Click for Demo</a>
-                    </div>
-                </div>
-            </div>
 
+                <img src="{% static 'img/d1.jpg'%}" class="d-block w-100" alt="...">
+            </div>
         </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-</body>
+</div>
 
-</html>
+
+    <hr class="featurette-divider my-0"  >
+
+    <div class="row featurette ml-2 "style=" background-color:#FDF7F0;">
+      <div class="col-md-7">
+        <h2 class="featurette-heading" style=" text-decoration: underline ;">1. My Portfolio.<span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead" ">WElCOME!! This is My First Website. I have created it learning online by using Django, HTML &BootStrap-v4. This Site Contains My Portfolio. It is going to have the following pages: Home,Projects,Technical Skills,About Me, Contact Me all pages are Fully Responsive and gives output as well.</p>
+        <a style=" font-weight: bold;" href="https://github.com/ankurramba91/Ankur_Portfolio">Click for Github Source Code </a></br>
+        <a style=" font-weight: bold;" href="http://ankurramba.pythonanywhere.com/">Click to See My Portfolio Website</a>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="900" height="800"src="{% static 'img/project1.jpg'%}" class="d-block w-100" alt="...">
+       
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette ml-2 "style=" background-color:#FDF7F0;">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading" style=" text-decoration: underline ;">2. Text-Utility <span class="text-muted">A tool for analyzing text data in Django backend.</span></h2>
+        <p class="lead">It is a simple django project or website in which we can Analyze text.What Can We do from textutils ? 1)Remove Punctuations 2)UPPERCASE 3)New Line Remove 4)Extra Spaces Remover 5)Numbers Remover</p>
+        <a style=" font-weight: bold;" href="https://github.com/ankurramba91/Text-Utility">Click for Github Source Code </a></br>
+        <a style=" font-weight: bold;" href="http://ankurramba.pythonanywhere.com/">Click to See Text-Utility Website</a>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+<!-- 
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+   -->
+
+{% endblock body %}

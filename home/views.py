@@ -21,6 +21,18 @@ def contact(request):
         desc=request.POST['desc']
         ins=Contact( name=name , email=email, phone=phone, desc=desc)
         ins.save()
-        print("the data has been writtion t DB")
+        
     # return HttpResponse("this is my contactpage(/contact)")
     return render(request,"contact.html")
+
+def python(request):
+    return render(request,"python.html")
+
+def datascience(request):
+    return render(request,"datascience.html")
+
+def rf(request):
+    return render(request,"rf.html")
+    
+    
+
