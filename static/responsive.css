@@ -1,0 +1,74 @@
+
+@media only screen and (max-width: 1024px){
+    body{
+        font-size: 13px;
+    }
+
+    .introp{
+        font-size: 20px;
+        
+    }
+
+    .introh{
+        font-size: 20px;
+        
+    }
+
+    .aboutmain{
+        width: 85%;
+       
+        
+    }
+    .ptitle{
+        font-size: 28px;
+    }
+
+    .fa{
+        margin: 8px 0px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 13px;
+    }
+    #intro{
+        height: 450px;
+
+    }
+
+    .aboutmain{
+        width: 80%;
+        font-size: 13px;
+    }
+
+    .col1{
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+    flex-basis: auto;
+    }
+
+    .allprojects{
+        flex-wrap: wrap;
+    }
+    .modalpara {
+        
+        text-align: center;}
+
+    .introp{
+            font-size: 20px;
+            
+        }
+        .introh{
+            font-size: 20px;
+            
+        }
+
+        .fa{
+            margin: 8px 0px;
+        }
+
+}

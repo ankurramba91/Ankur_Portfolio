@@ -11,63 +11,56 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'responsive.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=EB+Garamond&display=swap" rel="stylesheet">
+    
 
     <title>{% block title%}{% endblock title %}</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">Ankur Portfolio</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top " id="nav-placeholder">
+        <a class="navbar-brand" href="/">Ankur Sharma</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item {% block homeactive %}{% endblock homeactive %}">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#intro">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item {% block projectsactive %}{% endblock projectsactive %}">
-                    <a class="nav-link" href="/projects">Projects</a>
+                    <a class="nav-link"  href="#projects">Projects</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Technical Skills
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/python">Python Scipting</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/projects">Django Framework</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/datascience">Data Science</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/projects">HTML-5 & Bootstrap-v4</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/datascience">Tableau</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/rf">RF Optimization</a>
-                    </div>
-                    <li class="nav-item {% block aboutactive %}{% endblock aboutactive %}">
-                        <a class="nav-link" href="/about">About Me</a>
-                    </li>
-                
-            </ul>
-            <ul class="navbar-nav px-3">
-                <li class="nav-item text-nowrap">
-                    <a style=" font-weight: bold; font-size: 20px;"  class="nav-link" href="/contact">Contact Me</a>
+                <li class="nav-item {% block aboutactive %}{% endblock aboutactive %}">
+                    <a class="nav-link" href="#aboutme">About Me</a>
                 </li>
+                <li class="nav-item {% block contactactive %}{% endblock contactactive %}">
+                    <a class="nav-link" href="#contactme">Contact Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% static 'img/Ankur Sharma.pdf'%}" target="_blank">Download Resume</a>
+                </li>
+
+               
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
-        </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a target="_blank" href="https://www.facebook.com/Egoisticbastard/" class="fa fa-facebook"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/ankur-sharma-28484a1b/" class="fa fa-linkedin"></a></li>
+               
+            </ul>
+
+
+
     </nav>
 
     <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
-        <strong>Hello Visitor!</strong> I am looking for full time job in django,Tableau & Data Science.Please Contact me if you like me profile.
+        <strong>Hello Visitor!</strong> I am looking for full time job or Internship as Frontend or Backend
+        Developer.Please Contact me if you like my profile.
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -78,16 +71,6 @@
 
     {% endblock body %}
 
-
-
-
-    <footer class=" bg-dark text-light fixed-bottom">
-        <p class="text-center py-2 my-0">
-            Copyright &copy; 2020 | All rights reserved
-        </p>
-
-
-    </footer>
 
 
     <!-- Optional JavaScript -->
@@ -101,6 +84,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    
+        
 </body>
 
 </html>

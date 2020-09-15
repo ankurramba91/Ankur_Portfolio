@@ -7,127 +7,408 @@
 
 {% block body %}
 
-<div class="jumbotron jumbotron-fluid my-0" >
-    <div class="container text-center ">
 
-        <h2 class="display-2"><a href="/">Ankur Sharma</a></h2>
+<section id="intro" class="intro-section">
+    <div class="container text-center">
+        <div><img class="logo" src="{% static 'img/me.jpg'%}" alt="logo"></div>
+        <h1 class="introh">Hello, hola, नमस्ते !</h1>
+        <p class=" introp" id="typed"></p>
+    </div>
+</section>
 
-        <h1 class="display-3">Portfolio</h1>
+<header class="text-center ">
+    <h2 class="about" id="aboutme">About me</h2>
+</header>
 
-        <h2 class="display-4">
+<div class="aboutmain" id="about">
+    <div class="col1 ">
+        <p>Currently Eager to Change My Career in Frontend or Backend Developer,Knowledge of HTML-CSS,
+            JavaScript,Django, Python, Data Science. I am Autodidact, Practicing Online to Improve my skills.</p>
+        <p><strong>Current Location</strong>: Faridabad,HR</p>
+        <p><strong>Contact Number</strong>: 9711970195</p>
+        <p><strong>Passport Number</strong>: S3190828</p>
+        <p><strong>E-Mail Address</strong>: ankur.python@gmail.com</p>
 
-            <a href="/projects" class= "btn btn-danger my-2" style=" font-weight: bold; font-size:25px;">Projects</a>
-            •
-            <a href="/about"class="btn btn-success my-2" style=" font-weight: bold; font-size:25px;">About Me</a>
-            •
-            <a href="/contact"class="btn btn-primary my-2" style=" font-weight: bold; font-size:25px;">Contact Me</a>
-        </h2>
 
     </div>
+    <div class="col1 ">
+        <div class="skill-item">
+            <div class="progress-title">HTML Coding</div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100" style="width:50%">
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="progress-title">CSS</div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="progress-title">Javascript</div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="progress-title">Python</div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="progress-title">Django</div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<header class="text-center " id="projects">
+    <h2 class="about">Related Projects</h2>
+</header>
+
+<div class="allprojects">
+    <div class=" container">
+        <h4 class=" text-center ptitle ">Python Projects</h4>
+        <p class=" text-center modalpara ">Projects Made by only Using Python</p>
+        <div class="row">
+            <img src="{% static 'img/pythonl.png'%}" alt="..." class="projectlist" data-toggle="modal"
+                data-target="#Python">
+            <img src="{% static 'img/pythonl2.png'%}" alt="..." class="projectlist" data-toggle="modal"
+                data-target="#Python1">
+        </div>
+
+        <div class="modal fade" id="Python" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered mymodel">
+                <div class="modal-content">
+                    <button type="button" class="close btn-outline-info " data-dismiss="modal" aria-label="Close">
+                        <span style="font-size:14px; " aria-hidden="true">close &times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <h5 class="ptitle" id="exampleModalLabel">Python Health Management</h5>
+                        <p class="modalpara">Python Code to log your Exercise and Diet Plans.This Code Create a Text
+                            File log your plans and you can retrieve it later to check your Routines</p>
+                    </div>
+                    <div class="modal-foot">
+                        <button type="button" id="website" class="fa fa-globe"> <a
+                                href="https://repl.it/@AnkurSharma9/DecentGentleNewsaggregator-1#main.py"
+                                target="_blank" style="text-decoration: none; color: inherit;">Run Code</a></button>
+                        <button type="button" id="website" class="fa fa-github "> <a href="{% static 'img/Health.txt'%}"
+                                target="_blank" style="text-decoration: none; color: inherit;">Click for
+                                Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="Python1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered mymodel">
+                <div class="modal-content">
+                    <button type="button" class="close btn-outline-info " data-dismiss="modal" aria-label="Close">
+                        <span style="font-size:14px; " aria-hidden="true">close &times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <h5 class="ptitle" id="exampleModalLabel">Jarvis A.I Assistant</h5>
+                        <p class="modalpara">how cool it would be to have your own A.I. assistant? With this we can do
+                            Wikipedia searches without opening web browsers,
+                            and performing many other daily tasks like
+                            <li>It can play music for you.</li>
+                            <li>It can do Wikipedia searches for you.</li>
+                            <li>It is capable of opening websites like Google, Youtube, etc., in a web browser.</li>
+                            <li>It is capable of opening your code editor or IDE with a single voice command.</li>
+                            <strong>Read Discription in code body very carefully before running this code to your IDE</strong>
+                        </p>
+                    </div>
+                    <div class="modal-foot">
+                        <!-- <button type="button" id="website" class="fa fa-globe"> <a
+                                href="https://github.com/ankurramba91/My-A.I"
+                                target="_blank" style="text-decoration: none; color: inherit;">Run Code</a></button> -->
+                        <button type="button" id="website" class="fa fa-github "> <a href="https://github.com/ankurramba91/My-A.I"
+                                target="_blank" style="text-decoration: none; color: inherit;">Click for
+                                Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class=" container">
+        <h4 class=" text-center ptitle ">Django Framework</h4>
+        <p class=" text-center modalpara ">Full Responsive WebPages Using Django for Backend</p>
+
+        <div class="row text-center">
+            <img src="{% static 'img/djangol.png'%}" alt="..." class="projectlist " data-toggle="modal"
+                data-target="#Django">
+            <img src="{% static 'img/djangol1.png'%}" alt="..." class="projectlist " data-toggle="modal"
+                data-target="#Django1">
+            <img src="{% static 'img/djangol2.png'%}" alt="..." class="projectlist  " data-toggle="modal"
+                data-target="#Django2">
+            
+
+        </div>
+
+        <div class="modal fade" id="Django" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered mymodel">
+                <div class="modal-content">
+                    <button type="button" class="close btn-outline-info " data-dismiss="modal" aria-label="Close">
+                        <span style="font-size:14px; " aria-hidden="true">close &times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <h5 class="ptitle" id="exampleModalLabel">My Portfolio</h5>
+                        <p class="modalpara">This Site Contains My Portfolio.It is fully Responsive and Contact page
+                            save the output to Backend as well</p>
+                    </div>
+                    <div class="modal-foot">
+                        <button type="button" id="website" class="fa fa-globe"> <a
+                                href="http://ankurramba1.pythonanywhere.com/" target="_blank"
+                                style="text-decoration: none; color: inherit;">Visit Website</a></button>
+                        <button type="button" id="website" class="fa fa-github "> <a
+                                href="https://github.com/ankurramba91/Ankur_Portfolio" target="_blank"
+                                style="text-decoration: none; color: inherit;">GitHub Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="Django1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered mymodel">
+                <div class="modal-content">
+                    <button type="button" class="close btn-outline-info " data-dismiss="modal" aria-label="Close">
+                        <span style="font-size:14px; " aria-hidden="true">close &times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <h5 class="ptitle" id="exampleModalLabel">Text-Utility</h5>
+                        <p class="modalpara"><strong>A tool for analyzing text data in Django backend.</strong> It is a
+                            simple django project or website in which we can Analyze text.What Can We do from textutils
+                            ? 1)Remove Punctuations 2)UPPERCASE 3)New Line Remove 4)Extra Spaces Remover 5)Numbers
+                            Remover</p>
+                    </div>
+                    <div class="modal-foot">
+                        <button type="button" id="website" class="fa fa-globe"> <a
+                                href="http://ankurramba.pythonanywhere.com/" target="_blank"
+                                style="text-decoration: none; color: inherit;">Visit Website</a></button>
+                        <button type="button" id="website" class="fa fa-github "> <a
+                                href="https://github.com/ankurramba91/Text-Utility" target="_blank"
+                                style="text-decoration: none; color: inherit;">GitHub Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="Django2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered mymodel">
+                <div class="modal-content">
+                    <button type="button" class="close btn-outline-info " data-dismiss="modal" aria-label="Close">
+                        <span style="font-size:14px; " aria-hidden="true">close &times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <h5 class="ptitle" id="exampleModalLabel">ToDos-List</h5>
+                        <p class="modalpara"><strong>A tool to Note Down all Your Tasks in Django backend.</strong>
+                            ToDos-List-Made a simple Django project or website, in which we can list our daily task it
+                            contains two pages Home & Task page at home page we can list our task and submit it & in
+                            Task we can check our listed task.</p>
+                    </div>
+                    <div class="modal-foot">
+                        <button type="button" id="website" class="fa fa-globe"> <a
+                                href="http://ankurramba2.pythonanywhere.com/" target="_blank"
+                                style="text-decoration: none; color: inherit;">Visit Website</a></button>
+                        <button type="button" id="website" class="fa fa-github "> <a
+                                href="https://github.com/ankurramba91/todolist" target="_blank"
+                                style="text-decoration: none; color: inherit;">GitHub Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class=" container">
+        <h4 class=" text-center ptitle ">HTML-CSS & JavaScript</h4>
+        <p class=" text-center modalpara ">Projects Made by Using only HTML-CSS & JavaScript</p>
+
+        <div class="row">
+            <img src="{% static 'img/javal.png'%}" alt="..." class=" projectlist" data-toggle="modal"
+                data-target="#JavaScript">
+            <img src="{% static 'img/javal1.png'%}" alt="..." class=" projectlist" data-toggle="modal"
+                data-target="#JavaScript1">
+            <img src="{% static 'img/javal2.png'%}" alt="..." class=" projectlist" data-toggle="modal"
+                data-target="#JavaScript2">
+            <img src="{% static 'img/javal3.png'%}" alt="..." class=" projectlist" data-toggle="modal"
+                data-target="#JavaScript3">
+        </div>
+
+        <div class="modal fade" id="JavaScript" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered mymodel">
+                <div class="modal-content">
+                    <button type="button" class="close btn-outline-info " data-dismiss="modal" aria-label="Close">
+                        <span style="font-size:14px; " aria-hidden="true">close &times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <h5 class="ptitle" id="exampleModalLabel">Form-Validation</h5>
+                        <p class="modalpara">Made a Simple Form Using HTML, Bootstrap Which Performs, form validation
+                            using JavaScript Regular Expressions.It checks Name, Email & Number if anything is wrong it
+                            gives Error</p>
+                    </div>
+                    <div class="modal-foot">
+                        <button type="button" id="website" class="fa fa-globe"> <a
+                                href="https://ankurramba91.github.io/Form-Validation-using-Regular-Expressions/"
+                                target="_blank" style="text-decoration: none; color: inherit;">Visit
+                                Website</a></button>
+                        <button type="button" id="website" class="fa fa-github "> <a
+                                href="https://github.com/ankurramba91/Form-Validation-using-Regular-Expressions"
+                                target="_blank" style="text-decoration: none; color: inherit;">GitHub Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="JavaScript1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered mymodel">
+                <div class="modal-content">
+                    <button type="button" class="close btn-outline-info " data-dismiss="modal" aria-label="Close">
+                        <span style="font-size:14px; " aria-hidden="true">close &times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <h5 class="ptitle" id="exampleModalLabel">Transparent Login Page</h5>
+                        <p class="modalpara">Awesome Looking Transparent Login Page used HTML & CSS Only. It looks
+                            Amazing check it out</p>
+                    </div>
+                    <div class="modal-foot">
+                        <button type="button" id="website" class="fa fa-globe"> <a
+                                href="https://ankurramba91.github.io/Transparent-Login-Page/" target="_blank"
+                                style="text-decoration: none; color: inherit;">Visit Website</a></button>
+                        <button type="button" id="website" class="fa fa-github "> <a
+                                href="https://github.com/ankurramba91/Transparent-Login-Page" target="_blank"
+                                style="text-decoration: none; color: inherit;">GitHub Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="JavaScript2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered mymodel">
+                <div class="modal-content">
+                    <button type="button" class="close btn-outline-info " data-dismiss="modal" aria-label="Close">
+                        <span style="font-size:14px; " aria-hidden="true">close &times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <h5 class="ptitle" id="exampleModalLabel">Full Responsive Education Webpage</h5>
+                        <p class="modalpara">Full Responsive Education blog Sample <strong>used only HTML & CSS,
+                                JavaScript to make it Responsive</strong> made Hamburger for making it mobile friendly
+                            used JavaScript for click Event. Check it Out below</p>
+                    </div>
+                    <div class="modal-foot">
+                        <button type="button" id="website" class="fa fa-globe"> <a
+                                href="https://ankurramba91.github.io/Responsive-Education-Blog/" target="_blank"
+                                style="text-decoration: none; color: inherit;">Visit Website</a></button>
+                        <button type="button" id="website" class="fa fa-github "> <a
+                                href="https://github.com/ankurramba91/Responsive-Education-Blog" target="_blank"
+                                style="text-decoration: none; color: inherit;">GitHub Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="JavaScript3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered mymodel">
+                <div class="modal-content">
+                    <button type="button" class="close btn-outline-info " data-dismiss="modal" aria-label="Close">
+                        <span style="font-size:14px; " aria-hidden="true">close &times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <h5 class="ptitle" id="exampleModalLabel">SuperCool Car Animation</h5>
+                        <p class="modalpara">Amazing Car Animation <strong>used HTML-CSS & JavaScript</strong>
+                            Lamborghini High Speed Car Animation Looks beautiful Check it Below</p>
+                    </div>
+                    <div class="modal-foot">
+                        <button type="button" id="website" class="fa fa-globe"> <a
+                                href="https://ankurramba91.github.io/Lamborghini-Car-Animation/" target="_blank"
+                                style="text-decoration: none; color: inherit;">Visit Website</a></button>
+                        <button type="button" id="website" class="fa fa-github "> <a
+                                href="https://github.com/ankurramba91/Responsive-Education-Blog" target="_blank"
+                                style="text-decoration: none; color: inherit;">GitHub Code</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container my-2 text-center">
+    <h2 class=" about">Contact Me</h2>
+    {% if success %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Thank You!</strong> for contacting me.I will Respond you soon🙂
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endif %}
+    <form action="#contactme" method="POST" id="contactme">
+        {% csrf_token %}
+
+        <div class="form-group">
+
+            <input type="name" class="form-control" id="name" name='name' placeholder="Your Good Name">
+        </div>
+        <div class="form-group">
+
+            <input type="email" class="form-control" id="exampleFormControlInput1" name="email"
+                placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+
+            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Your Number">
+        </div>
+
+
+        <div class="form-group">
+
+            <textarea class="form-control" id="desc" name="desc" rows="3" placeholder="Tell Me More"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-success border border-secondary rounded btn-sm btn-block"
+            style="font-size: 23px;">Submit</button>
+
+    </form>
+
 </div>
 
 
 
-<!-- <div class="container-fluid mt-0 px-0">
-    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="10000">
-                <img src="{% static 'img/h1.jpg'%}" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-interval="2000">
-                <img src="{% static 'img/h2.jpg'%}" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="{% static 'img/h3.jpg'%}" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div> -->
-
-<div class="container  mb-5" style="background:#e1f3b7 !important">
-    <h1 class="text-center display-3 " style="text-decoration: underline;">Technical Skills</h1>
-    <div class="text-center row ml-4 mb-3">
-        <div class="col-md-4 d-flex align-items-stretch">
-            <div class="card border-primary mb-3" style="width: 18rem;">
-                <img src="{% static 'img/python.jpg'%}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Python</h5>
-                    <p class="card-text">Good knowledge of python scripting, I am Autodidact, Practice Coding
-                        Online to Improve my skills </p>
-                    <a href="/python" class="btn btn-primary">Click Here for More Info </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 d-flex align-items-stretch">
-            <div class="card border-primary mb-3" style="width: 18rem;">
-                <img src="{% static 'img/Django.jpg'%}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Django Framework</h5>
-                    <p class="card-text">Good knowledge of Django Framework</p><br/><br/>
-                    <a href="/projects" class="btn btn-primary">Click Here for More Info</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 d-flex align-items-stretch">
-            <div class="card border-primary mb-3" style="width: 18rem;">
-                <img src="{% static 'img/data.jpg'%}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Data Science</h5>
-                    <p class="card-text">Knowledge of Pandas, Numpy, Matplotlib Libraries in Python for data analysing
-                    </p><br/>
-                    <a href="/datascience" class="btn btn-primary">Click Here for More Info</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 d-flex align-items-stretch">
-            <div class="card border-primary mb-3" style="width: 18rem;">
-                <img src="{% static 'img/html.jpg'%}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">HTML-5 & Bootstrap-v4</h5>
-                    <p class="card-text">Working Knowledge of HTML & Bootstrap-v4 for webpage designing </p>
-                    <a href="/projects" class="btn btn-primary">Click Here for More Info</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 d-flex align-items-stretch">
-            <div class="card border-primary mb-3" style="width: 18rem;">
-                <img src="{% static 'img/tab.jpg'%}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Tableau</h5>
-                    <p class="card-text">Working Knowledge Tableau for Transforming Data into Actionable Insights
-                    </p>
-                    <a href="/datascience" class="btn btn-primary">Click Here for More Info</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 d-flex align-items-stretch">
-            <div class="card border-primary mb-3" style="width: 18rem;">
-                <img src="{% static 'img/ant.jpg'%}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">RF Optimization</h5>
-                    <p class="card-text">I Have a Working Experience of Total 5+ Years in RF Optimization(Telecom)
-                    </p>
-                    <a href="/rf" class="btn btn-primary">Click Here for More Info</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
 
 
-    {% endblock body %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async="" defer=""></script>
+<script>
+    window.onload = function () {
+        console.log("loaded")
+        var typed = new Typed('#typed', {
+            strings: ["I grind HTML-CSS,JavaScript,BootStrap and Weld them with Python-Django to create beautiful Websites 🙂"],
+            backSpeed: 30,
+            smartBackspace: true,
+            backDelay: 5000,
+            startDelay: 1000,
+            typeSpeed: 35,
+            loop: true,
+        });
+    };
+</script>
+
+
+
+{% endblock body %}

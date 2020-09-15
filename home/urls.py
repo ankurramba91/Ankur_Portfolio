@@ -11,10 +11,10 @@ admin.site.index_title = "Welcome to this Portal"
 urlpatterns = [
     
     path('', views.home, name='home'),
-    path('about', views.about, name='about'),
-    path('projects', views.projects, name='projects'),
-    path('contact', views.contact, name='contact'),
-    path('python', views.python, name='python'),
-    path('datascience', views.datascience, name='datascience'),
-    path('rf', views.rf, name='rf'),
+    # path('about', views.about, name='about'),
+    # path('projects', views.projects, name='projects'),
+    # # path('contact', views.contact, name='contact'),
+    # path('python', views.python, name='python'),
+    # path('datascience', views.datascience, name='datascience'),
+    # path('rf', views.rf, name='rf'),
 ]
