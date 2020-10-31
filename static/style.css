@@ -4,6 +4,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Baloo Bhai 2', cursive;
+   list-style: none;
+   text-decoration: none;
     
 }
 html{
@@ -11,12 +13,45 @@ html{
     
 }
 
+
+
 #nav-placeholder{  
-    opacity: 0.8; 
-    filter:(opacity=50);       
+    /* opacity: 0.8;   */
+    /* filter:(opacity=50);  */
+    background: linear-gradient(to left, rgb(236, 89, 89),red );
+    transition: 1s ease
+   
+}
+
+#nav-placeholder.scrolled{
+    opacity: .8;
+    background: linear-gradient(to left, rgb(236, 89, 89),red );
+}
+#nav-placeholder.scrolled1{
+    background: linear-gradient(to left, rgb(204, 39, 61),rgb(241, 4, 95) );
+   
+}
+
+#nav-placeholder a{
+    color: white;
+    font-weight: 500;
+    transition: transform .1s ease-in;
+}
+
+#nav-placeholder a:hover {
+    color: rgb(22, 21, 21);
+    font-weight: 500;
+    transform: scale(1.1);
+    
 }
 
 
+
+
+.navbar-toggler{
+    background:rgb(236, 89, 89);
+    border: 1px solid whitesmoke
+}
 
 #intro{
     background: url('img/intro2.jpg') center center no-repeat;
@@ -33,7 +68,12 @@ html{
     border-style: none;
     border-radius: 72px;
     margin: 20px;
-    width: 150px
+    width: 150px;
+    transition: transform .1s ease-in;
+    cursor: pointer;
+}
+.logo:hover{
+    transform: scale(1.2);    
 }
 
 .introh{
@@ -134,7 +174,6 @@ html{
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    
     margin-right: 30px;
   }
 
@@ -143,7 +182,7 @@ html{
   }
 
 .fa-facebook {
-    background: #3B5998;
+    background: #3B5999;
     color: white;
   }
 
@@ -166,10 +205,12 @@ html{
     border: 1px solid;
     margin: 7px auto;
     cursor: pointer;
+    transition: transform .1s ease-in;
 }
 
 .projectlist:hover{
-    opacity: 0.5; 
+    
+    transform: scale(1.1);
 }
 
 .modelimg{
